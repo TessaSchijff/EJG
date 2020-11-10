@@ -1,0 +1,131 @@
+* { box-sizing: border-box; }
+#grid {
+  background-color:hotpink;
+  display: -ms-grid;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 1fr);
+  grid-auto-rows: auto;
+  min-height: 100vh;
+  min-width:100vw;
+  max-height: 100vh;
+  max-width:100vw;
+	grid-gap: 1em;
+	justify-content: center;
+	margin: 0;
+    padding: 0;
+    padding-bottom: 60px;
+
+  grid-template-areas:
+    "PFTS PFTS PFTS PFTS PFTS PFTS PFTS PFTS PFTS"
+    "UCD UCD UCD MenI MenI VID VID VID propedeuse"
+    "UCD UCD UCD IntS IntS VID VID VID propedeuse"
+    "UCD UCD UCD IntS IntS pr-sport CNT CNT propedeuse"
+    "OG HCI HCI VRM VRM VRM pr-passie pr-passie propedeuse"
+    "pr-slaap pr-slaap ISGA VRM VRM VRM pr-passie pr-passie propedeuse"
+    "pr-slaap pr-slaap ISGA VRM VRM VRM WAp WAp propedeuse"
+    "Prgm Prgm ISGA InfA InfA NPD WAp WAp propedeuse";
+		grid-gap: 1em;
+}
+
+/*--------------------------------------------------*/
+figcaption {
+  font-size: 12px;
+  text-align: center;
+}
+
+figure.allemaal-vlakjes {
+  padding: 0.4em;
+  width:100%;
+  height:100%;
+}
+
+h1.PFTS {
+    grid-area: PFTS ;
+}
+.propedeuse {
+  background-color: yellow;
+  grid-area: propedeuse;
+}
+
+.UCD {
+  background-color: lightgreen;
+  grid-area: UCD;
+}
+
+.MenI {
+  background-color: red;
+  grid-area: MenI;
+}
+
+.VID {
+  background-color: red;
+  grid-area: VID;
+}
+
+.IntS {
+  background-color: lightgreen;
+  grid-area: IntS;
+}
+
+.pr-sport {
+  background-color: lightgreen;
+  grid-area: pr-sport;
+  background: url(https://media.s-bol.com/yP7kAG95V1rg/550x366.jpg) center;
+  background-size: cover;
+}
+
+.CNT {
+  background-color: lightgreen;
+  grid-area: CNT;
+}
+
+.OG {
+  background-color: lightgreen;
+  grid-area: OG;
+  width: 100%;
+}
+
+.HCI {
+  background-color: lightgreen;
+  grid-area: HCI;
+}
+
+.VRM {
+  background-color: lightgreen;
+  grid-area: VRM;
+}
+
+.pr-passie {
+  background-color: red;
+  grid-area: pr-passie;
+}
+
+.pr-slaap {
+  background-color: lightgreen;
+  grid-area: pr-slaap;
+}
+
+.ISGA {
+  background-color: lightgreen;
+  grid-area: ISGA;
+}
+
+.WAp {
+  background-color: red;
+  grid-area: WAp;
+}
+
+.Prgm {
+  background-color: lightgreen;
+  grid-area: Prgm;
+}
+
+.InfA {
+  background-color: lightgreen;
+  grid-area: InfA;
+}
+
+.NPD {
+  background-color: lightgreen;
+  grid-area: NPD;
+}
